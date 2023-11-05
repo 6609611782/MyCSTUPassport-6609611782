@@ -8,18 +8,15 @@ h1 {
     color:darkblue; 
     text-align:center;
  }
- .grid {
-   margin-bottom: 1rem;
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-   grid-gap: 1rem;
- }
  button {
    background-color:rgba(106, 184, 230, 0.719);
    width:40%;
    text-align:auto;
  }
- #tt {
+ #t1 {
+   text-align:center;
+ }
+ #t2 {
    text-align:center;
  }
  p {
@@ -41,12 +38,45 @@ h1 {
  #p3 {
     color:rgb(219, 157, 255); 
     text-align:center;
- } 
- .flex-container {
-   display: flex;
-   flex-flow: row;
  }
- 
+ .flex-container{
+   display:flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+ }
+ @media only screen and (max-width:600px){
+   #t1 {
+      width:100%;
+   }
+   #t2 {
+      width:100%;
+   }
+   #t3 {
+      width:100%;
+   }
+ } 
+ @media only screen and (min-width:600px){
+   #t1 {
+      width:50%;
+   }
+   #t2 {
+      width:50%;
+   }
+   #t3 {
+      width:0%;
+   }
+ } 
+ @media only screen and (min-width:768px){
+   #t1 {
+      width:33%;
+   }
+   #t2 {
+      width:33%;
+   }
+   #t3 {
+      width:34%;
+   }
+ } 
  body {
     background-image:linear-gradient(rgb(72, 128, 247),white);
  }
